@@ -1,15 +1,3 @@
-// requestAnim shim layer by Paul Irish
-window.requestAnimFrame = (function(){
-    return  window.requestAnimationFrame       ||
-        window.webkitRequestAnimationFrame ||
-        window.mozRequestAnimationFrame    ||
-        window.oRequestAnimationFrame      ||
-        window.msRequestAnimationFrame     ||
-        function(/* function */ callback, /* DOMElement */ element){
-            window.setTimeout(callback, 1000 / 60);
-        };
-})();
-
 var canvas2 = document.getElementById('canvas2');
 var c2 = canvas2.getContext('2d');
 c2.fillStyle = "#f5f4f4";
@@ -102,6 +90,6 @@ function explode(sprite,position_x,position_y) {
     }
 }
 //drawIt();
-//console.log(sprite_arr[0])
+//console.log(sprite_arr[0])я
 
 var func1 = setInterval(moveBottom, 100, sprite_arr[0]);
